@@ -17,6 +17,12 @@
 		812E8AB7294D1478005E0275 /* product.json in Resources */ = {isa = PBXBuildFile; fileRef = 812E8AB3294D1478005E0275 /* product.json */; };
 		812E8ABD294D14D8005E0275 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812E8ABC294D14D8005E0275 /* Constants.swift */; };
 		812E8AC2294D1627005E0275 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812E8AC1294D1627005E0275 /* FooterView.swift */; };
+		8147F1DD294E5EC500232054 /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8147F1DC294E5EC500232054 /* NavigationBarView.swift */; };
+		8147F1DF294E5FC600232054 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8147F1DE294E5FC600232054 /* LogoView.swift */; };
+		8147F1E4294E689A00232054 /* ExtensionUrlBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8147F1E3294E689A00232054 /* ExtensionUrlBundle.swift */; };
+		8147F1E6294E6BEC00232054 /* PlayersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8147F1E5294E6BEC00232054 /* PlayersModel.swift */; };
+		8147F1E8294E6DA400232054 /* FeaturedItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8147F1E7294E6DA400232054 /* FeaturedItemView.swift */; };
+		8147F1EA294E6E1B00232054 /* FeaturedTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8147F1E9294E6E1B00232054 /* FeaturedTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +38,12 @@
 		812E8ABC294D14D8005E0275 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		812E8ABE294D1536005E0275 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		812E8AC1294D1627005E0275 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
+		8147F1DC294E5EC500232054 /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
+		8147F1DE294E5FC600232054 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		8147F1E3294E689A00232054 /* ExtensionUrlBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUrlBundle.swift; sourceTree = "<group>"; };
+		8147F1E5294E6BEC00232054 /* PlayersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersModel.swift; sourceTree = "<group>"; };
+		8147F1E7294E6DA400232054 /* FeaturedItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedItemView.swift; sourceTree = "<group>"; };
+		8147F1E9294E6E1B00232054 /* FeaturedTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +120,7 @@
 		812E8AB9294D1493005E0275 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8147F1E5294E6BEC00232054 /* PlayersModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -115,6 +128,7 @@
 		812E8ABA294D1499005E0275 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				8147F1E3294E689A00232054 /* ExtensionUrlBundle.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -131,6 +145,10 @@
 			isa = PBXGroup;
 			children = (
 				812E8AC0294D161B005E0275 /* Home */,
+				8147F1DC294E5EC500232054 /* NavigationBarView.swift */,
+				8147F1DE294E5FC600232054 /* LogoView.swift */,
+				8147F1E7294E6DA400232054 /* FeaturedItemView.swift */,
+				8147F1E9294E6E1B00232054 /* FeaturedTabView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -218,9 +236,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				812E8AA4294D13DA005E0275 /* ContentView.swift in Sources */,
+				8147F1DF294E5FC600232054 /* LogoView.swift in Sources */,
 				812E8AC2294D1627005E0275 /* FooterView.swift in Sources */,
 				812E8AA2294D13DA005E0275 /* TouchdownApp.swift in Sources */,
+				8147F1E8294E6DA400232054 /* FeaturedItemView.swift in Sources */,
 				812E8ABD294D14D8005E0275 /* Constants.swift in Sources */,
+				8147F1E4294E689A00232054 /* ExtensionUrlBundle.swift in Sources */,
+				8147F1E6294E6BEC00232054 /* PlayersModel.swift in Sources */,
+				8147F1EA294E6E1B00232054 /* FeaturedTabView.swift in Sources */,
+				8147F1DD294E5EC500232054 /* NavigationBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
