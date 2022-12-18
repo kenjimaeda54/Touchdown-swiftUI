@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+	
+	
 	var body: some View {
 		GeometryReader{ geometry in
-			VStack {
+			VStack(spacing:0) {
 				NavigationBarView()
 					.background(.white)
 					.shadow(color: Color.black.opacity(0.05),radius: 5,x:0,y:5)
@@ -19,14 +21,17 @@ struct ContentView: View {
 				
 				ScrollView(.vertical,showsIndicators: false) {
 					
-					VStack(spacing: 10) {
+					VStack(spacing: 0) {
 						
 						FeaturedTabView()
-							.frame(height: 300)
+							.frame(minHeight: geometry.size.width / 1.3)
+							.padding(.vertical,10)
+						
+						CategoryGridView()
 						
 						FooterView()
 							.padding(.horizontal)
-						 
+						
 					}// Vstack
 					
 				}// ScrollView

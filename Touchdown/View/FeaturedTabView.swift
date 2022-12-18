@@ -8,7 +8,11 @@
 import SwiftUI
 
 struct FeaturedTabView: View {
-	//MARK: - Properties
+	//mudar a cor dos dots apresentado no page style
+	init() {
+		UIPageControl.appearance().currentPageIndicatorTintColor = UIColor(displayP3Red: 0, green: 0, blue: 0, alpha: 0.7)
+		UIPageControl.appearance().pageIndicatorTintColor = UIColor.black.withAlphaComponent(0.2)
+	}
 	
 	var body: some View {
 		TabView {
@@ -20,8 +24,8 @@ struct FeaturedTabView: View {
 			.padding(.horizontal,10)
 			
 		}//TabView
-		.tabViewStyle(.page(indexDisplayMode: .always))
-		
+		.tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
+
 	}
 }
 

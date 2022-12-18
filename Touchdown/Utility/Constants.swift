@@ -8,10 +8,20 @@
 
 import SwiftUI
 
-//data
-var players: [PlayersModel] = Bundle.main.decodeJsonFromBundle("player.json") ?? []
+//MARK: - data
+let players: [PlayersModel] = Bundle.main.decodeJsonFromBundle("player.json") ?? []
+let categories: [CategoriesModel] = Bundle.main.decodeJsonFromBundle("category.json") ?? []
 
 
-//colors
+//MARK: - colors
 let colorBackground: Color = Color("ColorBackground")
 let colorGray: Color = Color(UIColor.systemGray4)
+
+//MARK: - layout
+let columnSpacing: CGFloat = 10
+let rowSpacing: CGFloat = 10
+var gridItem: [GridItem]  {
+	return Array(repeating: GridItem(.flexible(),spacing: rowSpacing), count: 2)
+}
+
+
