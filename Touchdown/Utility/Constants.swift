@@ -11,6 +11,8 @@ import SwiftUI
 //MARK: - data
 let players: [PlayersModel] = Bundle.main.decodeJsonFromBundle("player.json") ?? []
 let categories: [CategoriesModel] = Bundle.main.decodeJsonFromBundle("category.json") ?? []
+let products: [ProductModel] = Bundle.main.decodeJsonFromBundle("product.json") ??  []
+let brands: [BrandModel] = Bundle.main.decodeJsonFromBundle("brand.json") ??  []
 
 
 //MARK: - colors

@@ -28,14 +28,26 @@ struct ContentView: View {
 							.padding(.vertical,10)
 						
 						CategoryGridView()
+							.padding(.horizontal,11)
+						
+						//adicionar fora do lazy se não ira bagançar ele
+						TitleView(title: "Helmets")
+						LazyVGrid(columns: gridItem,alignment: .leading) {
+							ForEach(products) { product in
+								ProductItemView(product: product)
+							}
+						}
+						
+						TitleView(title: "Brand")
+						BrandGridView()
+							.padding()
 						
 						FooterView()
 							.padding(.horizontal)
 						
 					}// Vstack
-					
-				}// ScrollView
 				
+				}// ScrollView
 				
 			}//Vstack
 			.background(colorBackground.ignoresSafeArea(.all,edges: .all))
