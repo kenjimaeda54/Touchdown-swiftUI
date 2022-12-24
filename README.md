@@ -1,13 +1,13 @@
 # Touchdown
-Pequeno app de ecommerce foco era trabalhar com conceito Observable  e mlehorar criacao de interface
+Pequeno App de comércio foco era trabalhar com conceito Observable  e melhorar criação de interface
 
 ## Feature
-- Aprendi maneira de criar meu proprio Shape de uma view
-- Dessa maneira nao fico limitado aos forneceidos pelo time da Apple
+- Aprendi de criar meu próprio Shape de uma view
+- Dessa maneira não fico limitado aos fornecidos pelo time da Apple
 - Para o shape encaixar perfeitamente precisa apenas colocar padding no topo 
-- Uso do z index e fundametal para fazer com que a imagem fique sobre o shape
-- Para criar um custom safe area eu usei o GemotryReader com ele consigo acesso ao safe area
-- Repara que coloco ignore safea dentro do Gemotry caso acontrario nao funcionara
+- Uso do z index e fundamental para fazer com que a imagem fique sobre o shape
+- Para criar um custom  navigation bar eu usei o GemotryReader,  com ele consigo acesso ao safe area
+- Repara que coloco ignore safea dentro do Geometry caso contrario não funcionara
 
 ```swift
 //criando um shape
@@ -96,16 +96,16 @@ GeometryReader { geometry in
 ```
 
 ## 
-- Trabelhei novametne com o conceito de Observer 
-- Anteriormente havia usado o ObservedObject
+- Trabelhei novamente com o conceito de Observer 
+- Havia Anteriormente usado o ObservedObject
 - Desta vez usei o EnvironmentObject
-- Quando preciso acesso de minha classe em varios lugares utilizo o [environmentObject](https://stackoverflow.com/questions/63343819/what-is-the-difference-between-environmentobject-and-observedobject)
-- Importante a tela anteior onde sera usado o environmente precisa ser chamado no preview
-- Isso e essencial para swift entender o estado atecessor do enviromente
-- Minha tela inicial era o ContentView porem uma tela anterior a chavma que e a principal a do Window
-- Entao preciso acionar la o enviroment
-- Repaara que a screen ProductDetail ira possuir acesso ao valor anterior em Home nao preciso necessarioametne instanciar a Classe
-- Precisa tambem as Struct componetneziadas ter no preview o enviroment
+- Quando preciso acesso de minha classe em vários lugares utilizo o [environmentObject](https://stackoverflow.com/questions/63343819/what-is-the-difference-between-environmentobject-and-observedobject)
+- Importante a tela anterior onde sera usado o environmente precisa ser chamado no preview
+- Isso e essencial para Swift entender o estado antecessor do enviroment
+- Minha tela inicial era o ContentView, porem uma Struct anterior instanciava ela, neste caso e a própria Window
+- Então preciso da propriedade  enviroment nesta Struct
+- Repara que a screen ProductDetail ira possuir acesso ao valor anterior de Home não preciso iniciar a Classe
+- Precisa também as Struct  componetizadas  ter no preview o enviroment
 
 ```swift
 //Uma tela antes da home
