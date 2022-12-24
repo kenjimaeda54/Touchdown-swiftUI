@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AddItemCartView: View {
 	//MARK: - Properties
+	@EnvironmentObject var shop: Shop;
 	
 	//MARK: - Func
 	func handleAddItemCart() {
@@ -29,7 +30,7 @@ struct AddItemCartView: View {
 		.background(
 			Capsule()
 				.foregroundColor(
-					Color.blue.opacity(0.7)
+					Color(red: shop.product?.red ?? sampleProduct.red, green: shop.product?.green ?? sampleProduct.green, blue: shop.product?.blue ?? sampleProduct.blue)
 				)
 			
 		)
@@ -39,6 +40,7 @@ struct AddItemCartView: View {
 struct AddItemCartView_Previews: PreviewProvider {
 	static var previews: some View {
 		AddItemCartView()
+			.environmentObject(Shop())
 			.previewLayout(.sizeThatFits)
 			.padding()
 	}

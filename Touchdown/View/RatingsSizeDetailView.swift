@@ -13,7 +13,7 @@ struct RatingsSizeDetailView: View {
 	
 	//MARK: - Func
 	func handleRatings(){
-		print("ola")
+	  
 	}
 	
 	var body: some View {
